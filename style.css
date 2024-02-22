@@ -1,0 +1,176 @@
+body
+{
+ background-image: url('Future_of_Pet_Care_Image_Small 1.jpg');
+ width: 100vw;
+ height: 100vh;
+ position: relative;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ overflow: hidden;
+}
+nav
+{
+    position: fixed;
+}
+.menu
+{
+    text-align: center;
+    position: fixed;
+    display: flex;
+    transition-duration: 0.5s;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.menu>ul{
+    left: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left:  auto;
+    margin-right: auto;
+    
+}
+li a
+{
+    /* text-decoration: none; */
+    left: 0;
+    margin:0 3vw;
+    font-size: 1.23vw;
+    list-style-type: none;
+    justify-content:space-between;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.menu:hover
+{
+    background-color: rgb(221, 128, 35);
+    list-style-type: none;
+    /* text-decoration: none; */
+}
+li a:hover
+{
+    color: black;
+}
+.sidebar
+{
+    position: fixed;
+    margin-top: 0;
+    right: 0;
+    height: 100vh;
+    width: 19vw;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: -20px 0 10px rgba(56, 32, 32, 0.748);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    backdrop-filter: blur(10vw);
+    display: none;
+
+}
+.sidebar a
+{
+    font-size: 1.7vw;
+}
+.sidebar li{
+    margin: auto 0;
+    list-style: none;
+    /* justify-content: space-evenly; */
+}
+.sidebar a:hover
+{
+    color: rgb(0, 0, 0);
+}
+.sidebar:hover
+{
+    background-color: rgb(221, 128, 35);
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  .dp{
+    width: 7vw;
+    height: 9vh;
+    border-radius: 50%;
+    align-items :left ;
+    margin-left: auto;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+  .flex-item-left
+  {
+    width: 50%;
+  }
+  .flex-item-right
+  {
+    width: 50%;
+  }
+  .HOLD{
+    font-size: 5vw;
+    margin-left: 3vw; 
+    text-align:center; 
+    margin-top: 10vh; 
+    text-decoration: wavy;
+  }
+  .know
+  {
+    margin: auto 7vw 0 14vw;
+    text-align: center;
+    border: 2.5px solid black;
+    border-radius: 50%;
+    /* box-shadow: rgba(49, 4, 4, 0.504); */
+    font-size: 3vw;
+    box-sizing:content-box;
+  }
+
+
+  @media only screen and (max-width: 750px) and (min-width:100px){
+    .hideOnMobile
+    {
+     display: none;
+    } 
+    .dp {
+     width: 14vw;
+     height: 16vh;
+     border-radius: 50%;
+     align-items :left ;
+     margin-left: auto;
+   }
+    .sidebar a
+ {
+     font-size: 2vw;
+ }
+ .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-item-left{
+     width: 0;
+  }
+ .flex-item-right{
+     /* display: flex; */
+     width: 100%;
+ }
+ .HOLD{
+    margin-top: 18vh;
+ }
+ .menu
+ {
+    font-size: 0;
+    margin: 0;
+ }
+   }
